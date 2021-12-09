@@ -36,10 +36,10 @@
             <section class="promo">
                 <h2 class="visually-hidden"></h2>
                 <div class="promo-content">
-                    <img class="img-welcome" src="img/welcome.svg" width="188" height="45">
-                    <img class="" src="img/gorgeous.svg" width="176" height="30" alt="">
-                    <img class="" src="img/sedona.svg" width="458" height="78" alt="">
-                    <img class="" src="img/text.svg" width="296" height="80" alt="">
+                    <img class="img-welcome" src="img/welcome.svg" width="188" height="45" alt="welcome">
+                    <img class="" src="img/gorgeous.svg" width="176" height="30" alt="to the gorgeous">
+                    <img class="" src="img/sedona.svg" width="458" height="78" alt="Sedona">
+                    <img class="" src="img/text.svg" width="296" height="80" alt="because the grand canyon sucks">
                 </div>
                 <p class="promo-description">СЕДОНА — небольшой городок в Аризоне, заслуживающий большего!</p>
                 <p class="promo-reason">Рассмотрим 5 причин, по которым 
@@ -55,7 +55,7 @@
                         <p class="feature-description">СЕДОНА — НЕ АТTРАКЦИОН ДЛЯ ТУРИСТОВ, 
                         ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ
                         </p>
-                        <img class="img-city" src="img/city.jpg" width="800"  height="401" alt="">
+                        <img class="img-city" src="img/city.jpg" width="800"  height="401" alt="картинка города">
                         <ul class="feature-sub-list">
                             <li class="feature-sub-item">
                                 <h4 class="feature-sub-title">Жилье</h4>
@@ -74,7 +74,7 @@
                      <li class="feature-item">
                         <h3 class="feature-title">ТАМ ЕСТЬ Мост дьявола</h3>
                         <p class="feature-description">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-                        <img class="img-bridge" src="img/bridge.jpg" width="800"  height="400" alt="">
+                        <img class="img-bridge" src="img/bridge.jpg" width="800"  height="400" alt=" картинка моста">
                      </li>
                      <li class="feature-item">
                         <h3 class="feature-title">НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
@@ -98,15 +98,42 @@
                 <button class="btn-search" type="button">ПОИСК ГОСТИНИЦЫ В седоне</button>
             </section>
 
-            <section class="map">
-                <img class="map-img" src="img/map.jpg" width="1200" height="593">
+            <section class="modal-form-search">
+                <h2 class="visually-hidden"> Форма поиска номера</h2>
+                <form class="form-search" action="https://echo.htmlacademy.ru" metod="post">
+                    <div class="form-search-item">
+                        <label for="arrival-date">Дата заезда:</label>
+                        <input type="text" id="arrival-date" name="arrival-date" value="" placeholder=" 24 апреля 2017">
+                    </div>
+                    <div class="form-search-item">
+                        <label for="departure-date">Дата выезда:</label>
+                        <input type="text" id="departure-date" name="departure-date" value="" placeholder=" 30 апреля 2017">
+                    </div>
+                    <div class="form-search-item">
+                        <p class="adults">Взрослыe
+                        <button class="btn-min">-</button>
+                        <span class="number-adults">2</span>
+                        <button class="btn-max">+</button>
+                    </div>
+                    <div class="form-search-item">
+                        <p class="children">Взрослыe
+                        <button class="btn-min">-</button>
+                        <span class="number-children">1</span>
+                        <button class="btn-max">+</button>
+                    </div>
+                    <button class="btn-form-search" type="submit">НАЙТИ</button>
+                </form>
                 
             </section>
 
+            <section class="map">
+                <img class="map-img" src="img/map.jpg" width="1200" height="593" alt="карта">
+            </section>
+ 
         </main>
         <footer class="page-footer">
             <div class="footer-logo">
-                <img class="" src="img/visitsedona.svg">
+                <img class="" src="img/visitsedona.svg"  width="136" height="16" alt="визитка">
             </div>
             <div class="social">
                 <ul>
@@ -114,7 +141,7 @@
                         <a class="social-btn" href="#"></a>
                     </li>
                      <li>
-                        <a lass="social-btn" href="#"></a>
+                        <a сlass="social-btn" href="#"></a>
                     </li>
                      <li>
                         <a lass="social-btn" href="#"></a>
