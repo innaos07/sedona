@@ -1,3 +1,22 @@
+
+body {
+    margin: 0;
+    font-family: "PT Sans", sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    min-width: 1280;
+    color: #333333;
+    background-color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
 .visually-hidden{
     position: absolute;
     clip: rect(0 0 0 0);
@@ -9,8 +28,52 @@
     overflow: hidden;
 }
 
+.main-nav-right-list,
+.main-nav-left-list  {
+    list-style: none;
+}
+.main-nav-right-link, 
+.main-nav-left-link {
+    color: #000000;
+    line-height: 26px;
+    text-transform: uppercase;
+}
+
 .promo {
     background-image: url("../img/mountains.jpg");
     background-size: cover; 
+}
+.promo-description {
+    margin: 0;
+    font-size: 21px;
+    font-weight: 700;
+    color: #000000;
+    line-height: 26px;
+    text-transform: uppercase;
+}
+
+.promo-reason {
+    margin: 0;
+    line-height: 26px;
+    text-transform: uppercase;
+}
+.feature-list {
+    list-style: none;
+}
+.feature-hit {
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
