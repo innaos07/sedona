@@ -4,8 +4,8 @@ body {
     font-family: "PT Sans", sans-serif;
     font-size: 14px;
     line-height: 21px;
-    min-width: 1280;
     color: #333333;
+    text-transform: uppercase;
     background-color: #ffffff;
 }
 
@@ -35,27 +35,25 @@ a {
 .main-nav-right-link, 
 .main-nav-left-link {
     color: #000000;
-    line-height: 26px;
-    text-transform: uppercase;
+    line-height: 26px; 
 }
 
 .promo {
     background-image: url("../img/mountains.jpg");
     background-size: cover; 
 }
+
 .promo-description {
     margin: 0;
     font-size: 21px;
     font-weight: 700;
     color: #000000;
     line-height: 26px;
-    text-transform: uppercase;
 }
 
 .promo-reason {
     margin: 0;
     line-height: 26px;
-    text-transform: uppercase;
 }
 .feature-list {
     list-style: none;
