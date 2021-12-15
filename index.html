@@ -16,7 +16,7 @@
                 <a class="header-logo">
                     <img src="img/logo.png" width="138" height="70" alt="Лого">
                 </a>
-                <nav class="main-nav-right">
+                <nav class="main-nav">
                     <ul class="main-nav-right-list">
                         <li class="main-nav-right-item">
                             <a class="main-nav-right-link" href="#">ИНФОРМАЦИЯ</a>
@@ -25,6 +25,7 @@
                             <a class="main-nav-right-link" href="#">ФОТО И ВИДЕО</a>
                         </li>
                     </ul>
+
                     <ul class="main-nav-left-list">
                         <li class="main-nav-left-item">
                             <a class="main-nav-left-link" href="#">КАРТА ШТАТА</a>
@@ -42,10 +43,10 @@
                 <div class="container">
                     <h2 class="visually-hidden"></h2>
                     <div class="promo-content">
-                        <img class="img-welcome" src="img/welcome.svg" width="188" height="45" alt="welcome">
-                        <img class="" src="img/gorgeous.svg" width="176" height="30" alt="to the gorgeous">
-                        <img class="" src="img/sedona.svg" width="458" height="78" alt="Sedona">
-                        <img class="" src="img/text.svg" width="296" height="80" alt="because the grand canyon sucks">
+                        <img class="img-welcome" src="img/welcome.png" width="188" height="45" alt="welcome">
+                        <img class="" src="img/gorgeous.png" width="176" height="30" alt="to the gorgeous">
+                        <img class="" src="img/sedona.png" width="458" height="78" alt="Sedona">
+                        <img class="" src="img/because.png" width="296" height="80" alt="because the grand canyon sucks">
                     </div>
                     <p class="promo-description">СЕДОНА — небольшой городок в Аризоне, заслуживающий большего!
                     </p>
@@ -108,13 +109,16 @@
             </section>
 
             <section class="search">
-                <h2 class="visually-hidden">Поиск гостиницы</h2>
-                <p class="search-title">ЗАИНТЕРЕСОВАЛИСЬ?</p>
-                <p class="search-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-                <button class="btn-search" type="button">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
+                <div class="container">
+                    <h2 class="visually-hidden">Поиск гостиницы</h2>
+                    <p class="search-title">ЗАИНТЕРЕСОВАЛИСЬ?</p>
+                    <p class="search-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+                    <button class="btn-search" type="button">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
+                </div>
             </section>
 
             <section class="modal-form-search">
+                <div class="container">
                 <h2 class="visually-hidden"> Форма поиска номера</h2>
                 <form class="form-search" action="https://echo.htmlacademy.ru" metod="post">
                     <div class="form-search-item">
@@ -126,18 +130,19 @@
                         <input type="text" id="departure-date" name="departure-date" value="" placeholder=" 30 апреля 2017">
                     </div>
                     <div class="form-search-item">
-                        <p class="adults">Взрослыe
+                        <p class="adults">Взрослыe</p>
                         <button class="btn-min">-</button>
-                        <span class="number-adults">2</span>
+                        <span class="number-container">2</span>
                         <button class="btn-max">+</button>
                     </div>
                     <div class="form-search-item">
-                        <p class="children">Взрослыe
+                        <p class="children">ДетИ:</p>
                         <button class="btn-min">-</button>
-                        <span class="number-children">1</span>
+                        <span class="number-container">1</span>
                         <button class="btn-max">+</button>
                     </div>
                     <button class="btn-form-search" type="submit">НАЙТИ</button>
+                </div>
                 </form>
                 
             </section>
@@ -168,7 +173,9 @@
                     </ul>
                 </div>
                 <p class="footer-copyright"> WEBSITE by
-                    <a class="btn-copyright" href="#"></a>
+                    <a class="btn-copyright" href="#">
+                        <img src="img/academy.png" width="115" height="41">
+                    </a>
                 </p>
             </div>
         </footer>
