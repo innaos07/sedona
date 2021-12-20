@@ -30,6 +30,16 @@ a {
     overflow: hidden;
 }
 
+.btn {
+    font: inherit;
+    border: none;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #000000;
+}
+
 .main-nav-right-list,
 .main-nav-left-list  {
     list-style: none;
@@ -123,14 +133,10 @@ a {
     padding-left: 139px;
     padding-right: 139px;
 
-    font: inherit;
+    
     font-size: 21px;
     font-weight: 700;
-    color: #ffffff; 
     line-height: 26px;
-    text-align: center;
-    vertical-align: middle;
-    border: 1px solid #766357;
     background-color: #766357;
 } 
 
@@ -191,30 +197,28 @@ a {
 }
 
 .btn-min {
+    border: none;
     padding-top: 7px;
     padding-bottom: 7px;
-    padding-right: 14px;
-    padding-left: 14px;
-    font: inherit;
+    padding-right: 16px;
+    padding-left: 16px;
     font-size: 24px;
     line-height: 24px;
     font-weight: 700;
     color: #a9a9a9;
-    border: none;
     background-color: #f2f2f2;
 }
 
 .btn-max {
+    border: none;
     padding-top: 7px;
     padding-bottom: 7px;
     padding-right: 14px;
     padding-left: 14px;
-    font: inherit;
     font-size: 24px;
     line-height: 24px;
     font-weight: 700;
     color: #a9a9a9;
-    border: none;
     background-color: #f2f2f2; 
 }
 
@@ -247,14 +251,9 @@ a {
     padding-left: 195px;
     padding-right: 197px;
 
-    font: inherit;
     font-size: 21px;
-    font-weight: 700;
-    color: #ffffff; 
+    font-weight: 700; 
     line-height: 26px;
-    text-align: center;
-    vertical-align: middle;
-    border: none;
     background-color: #81b3d2;
 } 
 
@@ -267,7 +266,9 @@ a {
     color: rgba(255, 255, 255, 0.3);
 }
 
-
+.social-list {
+    list-style: none;
+}
 
 
 

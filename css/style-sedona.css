@@ -1,0 +1,227 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    color: #333333;
+    text-transform: uppercase;
+    background-color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.visually-hidden{
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.main-nav-right-list,
+.main-nav-left-list  {
+    list-style: none;
+}
+.main-nav-right-link, 
+.main-nav-left-link {
+    font-weight: 700;
+    color: #000000;
+    line-height: 26px; 
+}
+
+.main-nav-right-link:hover, 
+.main-nav-left-link:hover {
+    color: #81b3d2;
+}
+
+.main-nav-right-link:active, 
+.main-nav-left-link:active {
+    color: #cacaca;
+}
+
+.main-nav-left-link-current {
+    color: #766357;
+    line-height: 26px;
+}
+ 
+.main-nav-left-link-current:hover, 
+.main-nav-left-link-current:active {
+    color: #766357;
+}
+
+.filter {
+    background-image: url("../img/background-two.png");
+}
+
+.filter fieldset {
+    border: none;
+}
+
+.filter-list {
+    list-style: none;
+}
+
+.filter legend,
+.filter-cost label,
+.filter-option label {
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.filter-cost-min,
+.filter-cost-max {
+    width: 155px;
+    height: 32;
+    margin: -2px;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    text-align: center;
+}
+.filter-cost-min {
+    padding-top: 11px;
+    padding-bottom: 10px;
+    padding-left: 60px;
+    padding-right: 60px;
+    border-right: none;
+}
+
+.filter-cost-max {
+    padding-top: 11px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-left: none;
+}
+ 
+.btn {
+    font: inherit;
+    border: none;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #000000;
+}
+
+.btn-filter {
+    width: 133px;
+    padding: 8px 30px;
+    border: 2px solid #ffffff;
+    background: none;
+}
+
+.btn-filter:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.result-description {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+}
+
+.result-sort {
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.sort-list {
+    list-style: none;
+}
+.sort-link {
+    font-size: 12px;
+    line-height: 18px; 
+    color: rgba(0, 0, 0, 0.3); 
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.3);
+}
+.sort-link:hover {
+    color: #81b3d2;
+}
+
+.sort-link:active {
+    color: #000000;
+    border-bottom: none;
+}
+
+.sort-link-current {
+    color: #81b3d2;
+    border-bottom: none;
+}
+
+.catalog-list {
+    list-style: none;
+}
+
+.cards-title {
+    font-size: 21px;
+    line-height: 26px;
+    color: #000000;
+}
+
+.cards-title:hover {
+    color: #81b3d2;
+}
+
+.cards-title:active {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.btn-info {
+    width: 110px;
+    padding: 5px 15px;
+    background-color: #81b3d2;
+}
+
+.btn-info:hover {
+    background-color: #669ec0;
+}
+
+.btn-info:active {
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.btn-reservation {
+    width: 118px;
+    padding: 5px 15px;
+    background-color: #766357;
+}
+
+.btn-reservation:hover {
+    background-color: #604e43;
+}
+
+.btn-reservation:active {
+    background-color: #503e33;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.card-rating {
+    width: 110px;
+    padding: 5px 15px;
+    color: #666666;
+    background-color: #f2f2f2;
+}
+
+.social-list {
+    list-style: none;
+}
+
+
+
+
+
+
+
+

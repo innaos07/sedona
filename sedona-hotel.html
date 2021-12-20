@@ -6,7 +6,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style-sedona.css">
     </head>
     <body>
         <header class="page-header">
@@ -38,61 +38,66 @@
 
         <main>
             <section class="filter">
-                <h2 class="visually-hidden"></h2>
-                <form action="https://echo.htmlacademy.ru" metod="get">
-                    <fieldset>
-                        <legend>ИНФРАСТРУКТУРА:</legend>
-                        <ul class="filter-list">
-                            <li class="filter-option">
-                                <input class="" type="checkbox" name="pool" id="filter-pool" checked>
-                                <label for="filter-pool">БАССЕЙН</label>
-                            </li>
-                            <li class="filter-option">
-                                <input class="" type="checkbox" name="parking" id="filter-parking">
-                                <label for="filter-parking">ПАРКОВКА</label>
-                            </li>
-                            <li class="filter-option">
-                                <input class="" type="checkbox" name="wi-fi" id="filter-wi-fi">
-                                <label for="filter-wi-fi">Wi-Fi</label>
-                            </li>
-                        </ul>
-                    </fieldset>
-                     <fieldset>
-                        <legend>Тип жилья:</legend>
-                         <ul class="filter-list">
-                            <li class="filter-option">
-                                <input class="" type="checkbox" name="hotel" id="filter-hotel" checked>
-                                <label for="filter-hotel">ГостиницА</label>
-                            </li>
-                            <li class="filter-option">
-                                <input class="" type="checkbox" name="motel" id="filter-motel">
-                                <label for="filter-motel">МОТЕЛЬ</label>
-                            </li>
-                            <li class="filter-option">
-                                <input class="" type="checkbox" name="apart" id="filter-apart">
-                                <label for="filter-apart">АПАРТАМЕНТЫ</label>
-                            </li>
-                        </ul>
-                    </fieldset>
-                     <div class="filter-cost">
-                        <span class="filter-cost-min">0</span>
-                        <input type="range" name="cost" id="filter-cost" min="0" max="3000">
-                        <span class="filter-cost-max">3000</span>
-                        <label for="filter-cost">Стоимость в сутки (Р):</label>
-                    <div>
-                        <button class="btn-filter" type="submit">ПОКАЗАТЬ</button>
-                </form>
+                <div class="container">
+                    <h2 class="visually-hidden"></h2>
+                    <form action="https://echo.htmlacademy.ru" metod="get">
+                        <fieldset>
+                            <legend>ИНФРАСТРУКТУРА:</legend>
+                            <ul class="filter-list">
+                                <li class="filter-option">
+                                    <input class="" type="checkbox" name="pool" id="filter-pool" checked>
+                                    <label for="filter-pool">БАССЕЙН</label>
+                                </li>
+                                <li class="filter-option">
+                                    <input class="" type="checkbox" name="parking" id="filter-parking">
+                                    <label for="filter-parking">ПАРКОВКА</label>
+                                </li>
+                                <li class="filter-option">
+                                    <input class="" type="checkbox" name="wi-fi" id="filter-wi-fi">
+                                    <label for="filter-wi-fi">Wi-Fi</label>
+                                </li>
+                            </ul>
+                        </fieldset>
+                         <fieldset>
+                            <legend>Тип жилья:</legend>
+                             <ul class="filter-list">
+                                <li class="filter-option">
+                                    <input class="" type="checkbox" name="hotel" id="filter-hotel" checked>
+                                    <label for="filter-hotel">ГостиницА</label>
+                                </li>
+                                <li class="filter-option">
+                                    <input class="" type="checkbox" name="motel" id="filter-motel">
+                                    <label for="filter-motel">МОТЕЛЬ</label>
+                                </li>
+                                <li class="filter-option">
+                                    <input class="" type="checkbox" name="apart" id="filter-apart">
+                                    <label for="filter-apart">АПАРТАМЕНТЫ</label>
+                                </li>
+                            </ul>
+                        </fieldset>
+                        <div class="filter-cost">
+                            <div class="filter-cost-range">
+                                <span class="filter-cost-min">от 0</span>
+                                <span class="filter-cost-max">до 3000</span>
+                            </div>
+                            <input type="range" name="cost" id="filter-cost" min="0" max="3000">
+                            <label for="filter-cost">Стоимость в сутки (Р):</label>
+                        <div>
+                            <button class="btn btn-filter" type="submit">ПОКАЗАТЬ</button>
+                    </form>
+                </div>
             </section>
 
             <section class="result">
-                <h2 class="visually-hidden"></h2>
+                <div class="container">
+                    <h2 class="visually-hidden"></h2>
                     <p class="result-description">Найдено
                         <span class="resault-number">3</span>
                     </p>
                     <p class="result-sort">СОРТИРОВКА:</p>
                     <ul class="sort-list">
                         <li class="sort-item">
-                            <a class="sort-link" href="#">ПО ЦЕНЕ</a>
+                            <a class="sort-link-current" href="#">ПО ЦЕНЕ</a>
                         </li>
                         <li class="sort-item">
                             <a class="sort-link" href="#">ПО ТИПУ</a>
@@ -107,40 +112,44 @@
                     <span class="sort-bottom">
                         <a href="#">bottom</a>
                     </span>
+                </div>
             </section>
 
             <section class="catalog">
-                <h2 class="visually-hidden"></h2>
-                <ul class="catalog-list">
-                    <li class="catalog-item">
-                        <h3 class="cards-title">Amara Resort & Spa</h3>
-                        <span class="card-description">Гостиница</span>
-                        <span class="card-price">ОТ 4000 Р.</span>
-                        <img class="card-img" src="img/product-1.jpg" width="135" height="90" alt="">
-                        <a class="btn btn-info" href="#">ПОДРОБНЕЕ</a>
-                        <a class="btn btn-reservation" href="#">ЗАБРОНИРОВАТЬ</a>
-                        <span class="card-rating">Рейтинг: 8,5</span>
-                    </li>
-                     <li class="catalog-item">
-                        <h3 class="cards-title">Amara Resort & Spa</h3>
-                        <span class="card-description">Мотель</span>
-                        <span class="card-price">ОТ 3000 Р.</span>
-                        <img class="card-img" src="img/product-2.jpg" width="135" height="90" alt="">
-                        <a class="btn btn-info" href="#">ПОДРОБНЕЕ</a>
-                        <a class="btn btn-reservation" href="#">ЗАБРОНИРОВАТЬ</a>
-                        <span class="card-rating">Рейтинг: 8,9</span>    
-                    </li>
-                     <li class="catalog-item">
-                        <h3 class="cards-title">Amara Resort & Spa</h3>
-                        <span class="card-description">Апартаменты</span>
-                        <span class="card-price">ОТ 2000 Р.</span>
-                        <img class="card-img" src="img/product-3.jpg" width="135" height="90" alt="">
-                        <a class="btn btn-info" href="#">ПОДРОБНЕЕ</a>
-                        <a class="btn btn-reservation" href="#">ЗАБРОНИРОВАТЬ</a>
-                        <span class="card-rating">Рейтинг: 9,2</span>
-                    </li>
-                </ul>
+                <div class="container">
+                    <h2 class="visually-hidden"></h2>
+                    <ul class="catalog-list">
+                        <li class="catalog-item">
+                            <h3 class="cards-title">Amara Resort & Spa</h3>
+                            <img class="card-img" src="img/product-1.jpg" width="135" height="90" alt="">
+                            <span class="card-description">Гостиница</span>
+                            <span class="card-price">ОТ 4000 Р.</span>
+                            <a class="btn btn-info" href="#">ПОДРОБНЕЕ</a>
+                            <a class="btn btn-reservation" href="#">ЗАБРОНИРОВАТЬ</a>
+                            <span class="card-rating">Рейтинг: 8,5</span>
+                        </li>
+                         <li class="catalog-item">
+                            <h3 class="cards-title">Amara Resort & Spa</h3>
+                            <img class="card-img" src="img/product-2.jpg" width="135" height="90" alt="">
+                            <span class="card-description">Мотель</span>
+                            <span class="card-price">ОТ 3000 Р.</span>
+                            <a class="btn btn-info" href="#">ПОДРОБНЕЕ</a>
+                            <a class="btn btn-reservation" href="#">ЗАБРОНИРОВАТЬ</a>
+                            <span class="card-rating">Рейтинг: 8,9</span>    
+                        </li>
+                         <li class="catalog-item">
+                            <h3 class="cards-title">Amara Resort & Spa</h3>
+                            <img class="card-img" src="img/product-3.jpg" width="135" height="90" alt="">
+                            <span class="card-description">Апартаменты</span>
+                            <span class="card-price">ОТ 2000 Р.</span>
+                            <a class="btn btn-info" href="#">ПОДРОБНЕЕ</a>
+                            <a class="btn btn-reservation" href="#">ЗАБРОНИРОВАТЬ</a>
+                            <span class="card-rating">Рейтинг: 9,2</span>
+                        </li>
+                    </ul>
+                </div>
             </section>
+
        <footer class="page-footer">
             <div class="container">
                 <div class="footer-logo">
@@ -159,8 +168,10 @@
                         </li>
                     </ul>
                 </div>
-                <p class="footer-copyright"> WEBSITE by
-                    <a class="btn-copyright" href="#"></a>
+                 <p class="footer-copyright"> WEBSITE by
+                    <a class="btn-copyright" href="#">
+                        <img src="img/academy.png" width="115" height="41">
+                    </a>
                 </p>
             </div>
         </footer>
