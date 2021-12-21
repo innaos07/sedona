@@ -17,6 +17,7 @@ a {
 .container {
   width: 1200px;
   margin: 0 auto;
+  padding: 0 50px;
 }
 
 .visually-hidden{
@@ -40,8 +41,35 @@ a {
     background-color: #000000;
 }
 
+.page-header {
+    height: 55px;
+    background-color: #ffffff;
+}
+.page-header-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-logo {
+    width: 138px;
+    height: 70px;
+    order: 2;
+
+}
+
+.main-nav-right {
+    order: 1;
+}
+
+.main-nav-left {
+    order: 3;
+}
+
 .main-nav-right-list,
 .main-nav-left-list  {
+    display: flex;
+    margin: 0;
+    padding: 0;
     list-style: none;
 }
 .main-nav-right-link, 
@@ -61,13 +89,66 @@ a {
     color: #cacaca;
 }
 
+.main-nav-right-item,
+.main-nav-left-item {
+    width: 240px;
+}
+
+.main-nav-right-item {
+    text-align: left;
+}
+
+.main-nav-left-item {
+    text-align: right;
+}
+
 .promo {
-    background-image: url("../img/mountains.jpg");
-    background-size: cover; 
+    min-height: 710px;
+    padding-top: 75px;
+    background-image: url("../img/mask-1.png"),
+                      url("../img/mask-2.png"),
+                      url("../img/mountains.jpg");
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size:  contain, contain, cover; 
+    background-position: 0 463px, bottom, 0 0;
+}
+
+.promo-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.img-welcome {
+    margin-bottom: 10px;
+    width: 188px;
+    height: 45px;
+}
+
+.img-gorgeous {
+    margin-bottom: 50px;
+    width: 176px;
+    height: 30px;
+}
+
+.img-sedona {
+    margin-bottom: 55px;
+    width: 458px;
+    height: 78px;
+}
+
+.img-because {
+    margin-bottom: 100px;
+     width: 296px;
+    height: 80px;
 }
 
 .promo-description {
-    margin: 0;
+    width: 640px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    padding: 0;
+    padding-top: 65px;
+
     font-size: 21px;
     font-weight: 700;
     color: #000000;
@@ -76,9 +157,10 @@ a {
 }
 
 .promo-reason {
-    margin: 0;
+    margin: 0 auto;
     line-height: 26px;
     text-align: center;
+    margin-bottom: 55px;
 }
 
 .feature-list {
@@ -87,6 +169,10 @@ a {
 
 .hit-column {
     background-color: #81b3d2;
+}
+
+.hit-column-city-wrapper {
+    display: flex;
 }
 
 .feature-title-hit {
