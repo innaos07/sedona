@@ -199,8 +199,8 @@ a {
 
 .feature-title-hit {
     margin: 0;
-    margin-bottom: 25px;
     padding: 0;
+    margin-bottom: 25px;
     font-size: 21px;
     font-weight: 700;
     color: #ffffff;
@@ -221,16 +221,25 @@ a {
     text-align: center;
 }
 
-.feature-sub-list-wrapper {
+.feature-sub-list{
     display: flex;
+    list-style: none;
 }
 
-.feature-sub-list {
-    list-style: none;
+
+.feature-sub-item {
+    width: 400px;
+    padding-top: 160px;
+    padding-right: 50px;
+    padding-left: 50px; 
+    padding-bottom: 85px;  
 }
 
 .feature-sub-title,
 .feature-title {
+    margin: 0;
+    margin-bottom: 30px;
+    padding: 0;
     font-size: 21px;
     font-weight: bold;
     color: #000000;
@@ -239,6 +248,8 @@ a {
 
 .feature-sub-description,
 .feature-description {
+    margin: 0;
+    padding: 0;
     text-align: center;
 }
 
@@ -246,11 +257,26 @@ a {
     display: flex;
     flex-direction: row-reverse;
 }
-/* ?
+
+
+
 .feature-list-wrapper  {
     display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
-*/
+
+.feature-column   {
+    width: 400px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    padding-right: 50px;
+    padding-left: 50px;
+    text-align: center;
+    background-color: #eeeeee;
+}
+
 .search-title {
     font-size: 30px;
     font-weight: 700;
