@@ -106,14 +106,33 @@ a {
 }
 
 .filter {
+    box-sizing: border-box;
+    min-height: 220px;
+    padding-top: 30px;
     background-image: url("../img/background-two.png");
+    background-position: no-repeat;
+    background-size: cover;
 }
 
-.filter fieldset {
+.filter-wrapper {
+    display: flex;
+    padding-left: 60px;
+    padding-right: 70px;
+    padding-bottom: 30px;
+}
+
+.filter-column-left,
+.filter-column-right {
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    padding-left: 10px;
     border: none;
 }
 
 .filter-list {
+    margin: 0;
+    padding: 0;
     list-style: none;
 }
 
@@ -122,6 +141,26 @@ a {
 .filter-option label {
     font-size: 16px;
     color: #ffffff;
+}
+
+.filter-option {
+    padding-bottom: 30px;
+}
+
+.filter-option:last-child {
+    padding-bottom: 0;
+}
+
+.filter-column-left legend,
+.filter-column-right legend {
+    margin-bottom: 25px;
+}
+
+.filter-cost-wrapper {
+    width: 340px;
+    dispaly: flex;
+    flex-direction: column;
+    margin-left: auto;
 }
 
 .filter-cost-min,

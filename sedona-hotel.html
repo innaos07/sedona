@@ -13,7 +13,7 @@
         <header class="page-header">
             <div class="container page-header-wrapper">
                 <h1 class="visually-hidden">Гостиница Sedona</h1>
-                <a class="header-logo">
+                <a class="header-logo" href="index.html">
                     <img src="img/logo.png" width="138" height="70" alt="Лого">
                 </a>
                 <nav class="main-nav-right">                
@@ -40,11 +40,11 @@
         </header>
 
         <main>
-            <section class="filter">
-                <div class="container">
+            <div class="container">
+                <section class="filter">
                     <h2 class="visually-hidden"></h2>
-                    <form action="https://echo.htmlacademy.ru" metod="get">
-                        <fieldset>
+                    <form  class="filter-wrapper" action="https://echo.htmlacademy.ru" metod="get">
+                        <fieldset class="filter-column-left">
                             <legend>ИНФРАСТРУКТУРА:</legend>
                             <ul class="filter-list">
                                 <li class="filter-option">
@@ -61,7 +61,7 @@
                                 </li>
                             </ul>
                         </fieldset>
-                         <fieldset>
+                         <fieldset class="filter-column-right">
                             <legend>Тип жилья:</legend>
                              <ul class="filter-list">
                                 <li class="filter-option">
@@ -78,21 +78,24 @@
                                 </li>
                             </ul>
                         </fieldset>
+                        <div class="filter-cost-wrapper">
                         <div class="filter-cost">
                             <div class="filter-cost-range">
                                 <span class="filter-cost-min">от 0</span>
                                 <span class="filter-cost-max">до 3000</span>
                             </div>
-                            <input type="range" name="cost" id="filter-cost" min="0" max="3000">
-                            <label for="filter-cost">Стоимость в сутки (Р):</label>
-                        <div>
-                            <button class="btn btn-filter" type="submit">ПОКАЗАТЬ</button>
+                            <div>
+                                <input type="range" name="cost" id="filter-cost" min="0" max="3000">
+                                <label for="filter-cost">Стоимость в сутки (Р):</label>
+                            </div>
+                            <div>
+                                <button class="btn btn-filter" type="submit">ПОКАЗАТЬ</button>
+                            </div>
+                        </div>
                     </form>
-                </div>
             </section>
 
             <section class="result">
-                <div class="container">
                     <h2 class="visually-hidden"></h2>
                     <p class="result-description">Найдено
                         <span class="resault-number">3</span>
@@ -115,11 +118,9 @@
                     <span class="sort-bottom">
                         <a href="#">bottom</a>
                     </span>
-                </div>
             </section>
 
             <section class="catalog">
-                <div class="container">
                     <h2 class="visually-hidden"></h2>
                     <ul class="catalog-list">
                         <li class="catalog-item">
@@ -150,8 +151,9 @@
                             <span class="card-rating">Рейтинг: 9,2</span>
                         </li>
                     </ul>
-                </div>
             </section>
+            </div>
+        </main>
 
         <footer class="page-footer">
             <div class="container">
@@ -191,7 +193,6 @@
 
 
 
-        </main>
 
 
     </body>
