@@ -73,6 +73,7 @@ a {
     display: flex;
     margin: 0;
     padding: 0;
+    padding-top: 15px;
     list-style: none;
 }
 .main-nav-right-link, 
@@ -191,6 +192,7 @@ a {
     padding-right: 60px;
     padding-left: 60px;
     background-color: #81b3d2;
+    text-align: center;
 }
 
 .hit-column-left {
@@ -204,24 +206,22 @@ a {
     font-size: 21px;
     font-weight: 700;
     color: #ffffff;
-    text-align: center;
 }
-/*  собака не работает margin хз почему
-.feature-number {
+
+.feature-number-hit {
     color: #ffffff;
-    margin: 0 auto;
-    margin-bottom: 25px;
 }
-*/
+
 .feature-description-hit {
     margin: 0;
     padding: 0;
     padding-top: 25px;
     color: #ffffff;
-    text-align: center;
 }
 
 .feature-sub-list{
+    margin: 0;
+    padding: 0;
     display: flex;
     list-style: none;
 }
@@ -232,7 +232,8 @@ a {
     padding-top: 160px;
     padding-right: 50px;
     padding-left: 50px; 
-    padding-bottom: 85px;  
+    padding-bottom: 85px; 
+    text-align: center; 
 }
 
 .feature-sub-title,
@@ -243,22 +244,19 @@ a {
     font-size: 21px;
     font-weight: bold;
     color: #000000;
-    text-align: center;
+    
 }
 
 .feature-sub-description,
 .feature-description {
     margin: 0;
     padding: 0;
-    text-align: center;
 }
 
 .hit-column-right-wrapper {
     display: flex;
     flex-direction: row-reverse;
 }
-
-
 
 .feature-list-wrapper  {
     display: flex;
@@ -277,7 +275,28 @@ a {
     background-color: #eeeeee;
 }
 
+.feature-description {
+    padding-top: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.search {
+    width: 640px;
+    padding-top: 55px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    
+    
+}
+
 .search-title {
+    margin: 0;
+    margin-bottom: 30px;
+    padding: 0;
     font-size: 30px;
     font-weight: 700;
     line-height: 36px;
@@ -286,6 +305,11 @@ a {
 }
 
 .search-description {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 30px;
+    padding-left: 80px;
+    padding-right: 80px;
     line-height: 24px;
     text-align: center;
 }
@@ -312,7 +336,22 @@ a {
     color: rgba(255, 255, 255, 0.3);
 }
 
+.map img {
+    width: 1200px;
+    height: 593;
+}
+
 .modal-form-search {
+
+    background-color: #000000;
+}
+
+.form-search { 
+    width: 568px;
+    margin: 0 auto;
+    padding: 55px;
+    display: flex;
+    flex-direction: column;
     background-color: #ffffff;
 }
 
@@ -429,10 +468,49 @@ a {
     color: rgba(255, 255, 255, 0.3);
 }
 
-.social-list {
-    list-style: none;
+.page-footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    padding-right: 100px;
+    padding-left: 100px;
 }
 
+.footer-logo {
+    width: 136px;
+    height: 16px;
+    align-self: center;
+}
 
+.social-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    align-self: center;
+}
+
+.footer-copyright-wrapper {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.footer-copyright {
+    margin: 0;
+    padding: 0;
+    align-self: center;
+
+}
+
+.btn-copyright {
+    align-self: center;
+}
+
+.btn-copyright img {
+    width: 115px;
+    height: 41px;   
+}
 
 
