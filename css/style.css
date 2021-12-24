@@ -2,13 +2,13 @@
 body {
     margin: 0;
     padding: 0;
-    
+    min-width: 1240px;
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 14px;
     line-height: 21px;
     color: #333333;
     text-transform: uppercase;
-    background-color: #ffffff;
+    background-color: #f2f2f2;
 }
 
 a {
@@ -17,7 +17,6 @@ a {
 .container {
   width: 1200px;
   margin: 0 auto;
-  padding: 0 0px;
 }
 
 .visually-hidden{
@@ -41,30 +40,33 @@ a {
     background-color: #000000;
 }
 
-.page-header {
-    height: 55px;
-    background-color: #ffffff;
-}
 .page-header-wrapper {
     display: flex;
     justify-content: space-between;
-    
+    display: relative;
+    background-color: #ffffff;
 }
 
 .header-logo {
+    position: relative;
+    width: 138px;
+    order: 2;
+}
+.header-logo img{
+    position: absolute;
     width: 138px;
     height: 70px;
-    order: 2;
-
 }
 
 .main-nav-right {
     padding-left: 50px;
+    margin-right: auto;
     order: 1;
 }
 
 .main-nav-left {
     padding-right: 50px;
+    margin-left: auto;
     order: 3;
 }
 
@@ -73,11 +75,14 @@ a {
     display: flex;
     margin: 0;
     padding: 0;
-    padding-top: 15px;
     list-style: none;
+    flex-wrap: wrap;
 }
 .main-nav-right-link, 
 .main-nav-left-link {
+    display: block;
+    padding-top: 15px;
+    padding-bottom: 15px;
     font-weight: 700;
     color: #000000;
     line-height: 26px; 
@@ -98,10 +103,6 @@ a {
     width: 240px;
 }
 
-.main-nav-right-item {
-    text-align: left;
-}
-
 .main-nav-left-item {
     text-align: right;
 }
@@ -115,6 +116,7 @@ a {
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-size:  contain, contain, cover; 
     background-position: 0 441px, 0 499px, 0 -60px;
+    background-color: #ffffff;
 }
 
 .promo-content {
@@ -165,14 +167,16 @@ a {
     line-height: 26px;
     text-align: center;
     margin-bottom: 55px;
+}
 
+.feature {
+    background-color: #ffffff;
 }
 
 .feature-list {
     margin: 0;
     padding: 0;
     list-style: none;
-
 }
 
 .hit-column-left-wrapper {
@@ -282,15 +286,16 @@ a {
 }
 
 .search {
+    background-color: #ffffff;
+}
+
+.search-wrapper {
     width: 640px;
     padding-top: 55px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #ffffff;
-    
-    
 }
 
 .search-title {
@@ -335,6 +340,10 @@ a {
     background-color: #503e33;
     color: rgba(255, 255, 255, 0.3);
 }
+
+.map {
+    background-color: #ffffff;
+ }
 
 .map img {
     width: 1200px;
@@ -475,6 +484,7 @@ a {
     padding-bottom: 35px;
     padding-right: 100px;
     padding-left: 100px;
+    background-color: #ffffff;
 }
 
 .footer-logo {
