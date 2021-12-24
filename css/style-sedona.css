@@ -51,13 +51,6 @@ a {
     width: 138px;
     height: 70px;
 }
-.header-logo {
-    position: absolute;
-    left: 570px;
-    width: 138px;
-    height: 70px;
-    order: 2;
-}
 
 .main-nav-right {
     padding-left: 50px;
