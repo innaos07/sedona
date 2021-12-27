@@ -110,10 +110,11 @@ a {
 .promo {
     min-height: 635px;
     padding-top: 75px;
-    background-image: url("../img/mountains.jpg");
-    background-repeat: no-repeat;
-    background-size: cover; 
-    background-position: 0 -60px;
+    background-image:   url("../img/mask-promo.png"),
+                         url("../img/mountains.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-size: contain, cover; 
+    background-position: 0  440px, 0 -60px;
     background-color: #ffffff;
 }
 
