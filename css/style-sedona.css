@@ -154,7 +154,7 @@ img {
 .filter legend,
 .filter-cost label,
 .filter-option label,
-.filter-cost-title {
+.filter-range label{
     font-size: 16px;
     color: #ffffff;
 }
@@ -174,14 +174,21 @@ img {
 
 .filter-cost-wrapper {
     width: 340px;
-    dispaly: flex;
+    display: flex;
     flex-direction: column;
     margin-left: auto;
 }
 
 .filter-range {
-    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
 }
+
+.filter-range label {
+    margin-bottom: 15px;
+}
+
 .filter-cost {
     display: flex;
     position: relative;
@@ -192,7 +199,7 @@ img {
     content: "";
     position: absolute;
     top: 2px;
-    left: 148px;
+    left: 168px;
     width: 2px;
     height: 38px;
     background-color: #ffffff;
@@ -202,10 +209,12 @@ img {
 .filter-cost-max {
     display: block;
     box-sizing: border-box;
-    width: 155px;
+    width: 170px;
+    padding-right: 45px;
+    padding-left: 45px;
     padding-top: 11px;
     padding-bottom: 10px;
-    margin: -2px;
+    
     color: #ffffff;
     border: 2px solid #ffffff;
     text-align: center;
@@ -213,10 +222,12 @@ img {
 }
 .filter-cost-min {
     border-right: none;
+    margin-right: -1px;
 }
 
 .filter-cost-max {
     border-left: none;
+    margin-left: -1px;
 }
  
 .btn {
@@ -230,6 +241,7 @@ img {
 }
 
 .btn-filter {
+    align-self: center;
     width: 133px;
     padding: 8px 30px;
     border: 2px solid #ffffff;
