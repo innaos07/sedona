@@ -153,7 +153,8 @@ img {
 
 .filter legend,
 .filter-cost label,
-.filter-option label {
+.filter-option label,
+.filter-cost-title {
     font-size: 16px;
     color: #ffffff;
 }
@@ -178,28 +179,43 @@ img {
     margin-left: auto;
 }
 
+.filter-range {
+    margin-bottom: 25px;
+}
+.filter-cost {
+    display: flex;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.filter-cost::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 148px;
+    width: 2px;
+    height: 38px;
+    background-color: #ffffff;
+}
+
 .filter-cost-min,
 .filter-cost-max {
+    display: block;
+    box-sizing: border-box;
     width: 155px;
-    height: 32;
+    padding-top: 11px;
+    padding-bottom: 10px;
     margin: -2px;
     color: #ffffff;
     border: 2px solid #ffffff;
     text-align: center;
+
 }
 .filter-cost-min {
-    padding-top: 11px;
-    padding-bottom: 10px;
-    padding-left: 60px;
-    padding-right: 60px;
     border-right: none;
 }
 
 .filter-cost-max {
-    padding-top: 11px;
-    padding-bottom: 10px;
-    padding-left: 40px;
-    padding-right: 40px;
     border-left: none;
 }
  
@@ -223,6 +239,10 @@ img {
 .btn-filter:hover {
     background-color: #ffffff;
     color: #000000;
+}
+
+.result-wrapper {
+
 }
 
 .result-description {
@@ -331,35 +351,66 @@ img {
 }
 
 .social-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     padding: 0;
     margin: 0;
+    width: 150px;
     list-style: none;
     align-self: center;
+}
+
+.social-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 46px;
+    height: 48px;
+    background-color: #81b3d2;
+}
+
+.social-btn:hover  {
+    background-color: #669ec0;
+}
+
+.social-btn:active {
+    background-color: #5496bd;
+}
+.social-btn:active path {
+    fill: #88b6d1;
 }
 
 .footer-copyright-wrapper {
     width: 200px;
     display: flex;
     justify-content: space-between;
-
 }
 
 .footer-copyright {
     margin: 0;
     padding: 0;
     align-self: center;
-
 }
 
 .btn-copyright {
+    width: 115px;
+    height: 40px;
     align-self: center;
+}
+
+.btn-copyright:hover path {
+   fill: #81b3d2;
+}
+
+.btn-copyright:active path{
+    fill: #bdbbbc;
 }
 
 .btn-copyright img {
     width: 115px;
     height: 41px;   
 }
-
 
 
 
