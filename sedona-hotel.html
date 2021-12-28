@@ -46,39 +46,43 @@
                 <section class="filter">
                     <h2 class="visually-hidden"></h2>
                     <form  class="filter-wrapper" action="https://echo.htmlacademy.ru" metod="get">
-                        <fieldset class="filter-column-left">
-                            <legend>ИНФРАСТРУКТУРА:</legend>
-                            <ul class="filter-list">
-                                <li class="filter-option">
-                                    <input class="" type="checkbox" name="pool" id="filter-pool" checked>
-                                    <label for="filter-pool">БАССЕЙН</label>
-                                </li>
-                                <li class="filter-option">
-                                    <input class="" type="checkbox" name="parking" id="filter-parking">
-                                    <label for="filter-parking">ПАРКОВКА</label>
-                                </li>
-                                <li class="filter-option">
-                                    <input class="" type="checkbox" name="wi-fi" id="filter-wi-fi">
-                                    <label for="filter-wi-fi">Wi-Fi</label>
-                                </li>
-                            </ul>
+                        <fieldset>
+                            <div class="filter-column-left">
+                                <legend>ИНФРАСТРУКТУРА:</legend>
+                                <ul class="filter-list">
+                                    <li class="filter-option">
+                                        <input class="" type="checkbox" name="pool" id="filter-pool" checked>
+                                        <label for="filter-pool">БАССЕЙН</label>
+                                    </li>
+                                    <li class="filter-option">
+                                        <input class="" type="checkbox" name="parking" id="filter-parking">
+                                        <label for="filter-parking">ПАРКОВКА</label>
+                                    </li>
+                                    <li class="filter-option">
+                                        <input class="" type="checkbox" name="wi-fi" id="filter-wi-fi">
+                                        <label for="filter-wi-fi">Wi-Fi</label>
+                                    </li>
+                                </ul>
+                            </div>
                         </fieldset>
-                         <fieldset class="filter-column-right">
-                            <legend>Тип жилья:</legend>
-                             <ul class="filter-list">
-                                <li class="filter-option">
-                                    <input class="" type="checkbox" name="hotel" id="filter-hotel" checked>
-                                    <label for="filter-hotel">ГостиницА</label>
-                                </li>
-                                <li class="filter-option">
-                                    <input class="" type="checkbox" name="motel" id="filter-motel">
-                                    <label for="filter-motel">МОТЕЛЬ</label>
-                                </li>
-                                <li class="filter-option">
-                                    <input class="" type="checkbox" name="apart" id="filter-apart">
-                                    <label for="filter-apart">АПАРТАМЕНТЫ</label>
-                                </li>
-                            </ul>
+                         <fieldset>
+                            <div class="filter-column-right">
+                                <legend>Тип жилья:</legend>
+                                 <ul class="filter-list">
+                                    <li class="filter-option">
+                                        <input class="" type="checkbox" name="hotel" id="filter-hotel" checked>
+                                        <label for="filter-hotel">ГостиницА</label>
+                                    </li>
+                                    <li class="filter-option">
+                                        <input class="" type="checkbox" name="motel" id="filter-motel">
+                                        <label for="filter-motel">МОТЕЛЬ</label>
+                                    </li>
+                                    <li class="filter-option">
+                                        <input class="" type="checkbox" name="apart" id="filter-apart">
+                                        <label for="filter-apart">АПАРТАМЕНТЫ</label>
+                                    </li>
+                                </ul>
+                            </div>
                         </fieldset>
                         <div class="filter-cost-wrapper">
                             <div class="filter-range">
@@ -112,12 +116,14 @@
                             <a class="sort-link" href="#">ПО РЕЙТИНГУ</a>
                         </li>
                     </ul>
-                    <span class="sort-top">
-                        <a href="#">top</a>
-                    </span>
-                    <span class="sort-bottom">
-                        <a href="#">bottom</a>
-                    </span>
+                    <div class="btn-sort">
+                        <span class="sort-top sort-top-current">
+                            <a class="visually-hidden" href="#">up</a>
+                        </span>
+                        <span class="sort-bottom sort-bottom-current">
+                            <a class="visually-hidden" href="#">down</a>
+                        </span>
+                    </div>
                 </div>
             </section>
 
