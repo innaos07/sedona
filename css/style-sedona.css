@@ -131,7 +131,7 @@ img {
 
 .filter-wrapper {
     display: flex;
-    padding-left: 65px;
+    padding-left: 70px;
     padding-right: 70px;
     padding-bottom: 30px;
 }
@@ -145,7 +145,6 @@ img {
     width: 250px;
     margin: 0;
     padding: 0;
-    padding-left: 10px;
     
 }
 
@@ -257,12 +256,12 @@ img {
     color: #000000;
 }
 
-.result-wrapper {
+.result {
     display: flex;
     align-items:center; 
     padding-top: 30px;
     padding-bottom: 30px;
-    padding-left: 65px;
+    padding-left: 70px;
     padding-right: 70px;
     background-color: #ffffff;
     border-bottom: 1px solid #e5e5e5;
@@ -400,11 +399,48 @@ img {
     border-left-color: transparent;
 }
 
+.catalog {
+    background-color: #ffffff;
+    
+}
+
 .catalog-list {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
     list-style: none;
 }
 
+.catalog-item {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.catalog-item-wrapper {
+     display: flex;
+     padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.card-img {
+    width: 150px;
+    height: 108px;
+    margin-right: 30px;
+}
+
+.card-wrapper-center {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 730px;
+
+}
+
 .cards-title {
+    margin: 0;
+    margin-bottom: 15px;
     font-size: 21px;
     line-height: 26px;
     color: #000000;
@@ -418,9 +454,26 @@ img {
     color: rgba(0, 0, 0, 0.3);
 }
 
+.card-info {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.card-description {
+    margin-right: 40px;
+}
+
+.card-btn {
+    display: flex;
+}
+
 .btn-info {
+    margin-right: 5px;
     width: 110px;
-    padding: 5px 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
     background-color: #81b3d2;
 }
 
@@ -448,8 +501,61 @@ img {
     color: rgba(255, 255, 255, 0.3);
 }
 
+.card-wrapper-right {
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 140px;
+    position: relative;
+}
+
+.card-stars {
+    width: 125px;
+    height: 26px;
+    background-image: url("../img/star.svg");
+    background-repeat: no-repeat;
+    background-position: 105px 0px;
+}
+
+.stars-five {
+    background-image: url("../img/star.svg"),
+                      url("../img/star.svg"),
+                      url("../img/star.svg"),
+                      url("../img/star.svg"),
+                      url("../img/star.svg");
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+    background-position: 25px 0px, 45px 0px, 65px 0px, 85px 0px, 105px 0px;
+}
+
+.stars-four {
+    background-image: url("../img/star.svg"),
+                      url("../img/star.svg"),
+                      url("../img/star.svg"),
+                      url("../img/star.svg");
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+    background-position: 45px 0px, 65px 0px, 85px 0px, 105px 0px;
+}
+
+.stars-three {
+    background-image: url("../img/star.svg"),
+                      url("../img/star.svg"),
+                      url("../img/star.svg");
+    background-repeat:  no-repeat, no-repeat, no-repeat;
+    background-position: 65px 0px, 85px 0px, 105px 0px;
+}
+
+.stars-two {
+    background-image: url("../img/star.svg"),
+                      url("../img/star.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: 85px 0px, 105px 0px;
+}
+
 .card-rating {
-    width: 110px;
+    box-sizing: border-box;
+    width: 125px;
     padding: 5px 15px;
     color: #666666;
     background-color: #f2f2f2;
