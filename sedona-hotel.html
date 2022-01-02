@@ -85,6 +85,7 @@
                             </div>
                         </fieldset>
                         <div class="filter-cost-wrapper">
+                            <!--
                             <div class="filter-range">
                                 <label for="filter-cost">Стоимость в сутки (Р):</label>
                                  <div class="filter-cost">
@@ -92,6 +93,26 @@
                                     <span class="filter-cost-max">до 3000</span>
                                 </div>
                                 <input class="" type="range" name="cost" id="filter-cost" min="0" max="3000">
+                            </div>
+                        -->
+                            <div class="filter-range">
+                                <div class="filter-range-title">Стоимость в сутки (Р):</div>
+                                <div class="price-controls">
+                                    <label class="min-price">от 
+                                        <input type="text" name="min-price" id="min-price" value="0">
+                                    </label>
+                                     <label class="max-price">до 
+                                        <input type="text" name="max-price" id="max-price" value="3000">
+                                    </label>
+                                </div>
+                                <div class="range-controls">
+                                    <div class="scale">
+                                        <div class="bar"></div>
+                                    </div>
+                                    <div class="range-toggle range-toggle-min"></div>
+                                    <div class="range-toggle range-toggle-max"></div>
+                                </div>
+
                             </div>
                             <button class="btn btn-filter" type="submit">ПОКАЗАТЬ</button>  
                         </div>
@@ -117,7 +138,7 @@
                         </li>
                     </ul>
                     <div class="btn-sort">
-                        <span class="sort-top sort-top-current">
+                        <span class="sort-top ">
                             <a class="visually-hidden" href="#">up</a>
                         </span>
                         <span class="sort-bottom sort-bottom-current">

@@ -181,7 +181,7 @@ img {
     flex-direction: column;
     margin-left: auto;
 }
-
+/*
 .filter-range {
     display: flex;
     flex-direction: column;
@@ -232,7 +232,96 @@ img {
     border-left: none;
     margin-left: -1px;
 }
- 
+ */
+
+.filter-range-title {
+    font-size: 16px;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.price-controls {
+    position: relative;
+    height: 36px;
+    margin-bottom: 30px;
+    font-size: 0;
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+}
+
+.price-controls::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 2px;
+    height: 22px;
+    background: #ffffff;
+    transform: translate(-50%, -50%);
+}
+
+.price-controls label {
+    display: inline-block;
+    line-height: 38px;
+    vertical-align: top;
+    cursor: pointer;
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
+    width: 113px;
+    padding-left: 55px;
+}
+
+.price-controls input {
+    width: 50px;
+    margin: 0;
+    color: inherit;
+    font: inherit;
+    background: none;
+    border: none;
+}
+
+.range-controls {
+    position: relative;
+    margin-bottom: 32px;
+}
+
+.range-controls .scale {
+    height: 2px;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+    width: 80%;
+    height: 2px;
+    background: #ffffff;
+}
+
+.range-toggle {
+    position: absolute;
+    top: -9px;
+
+    width: 4px;
+    height: 4px;
+    background: #ababab;
+    border: 8px solid #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2)
+}
+
+.range-toggle:hover {
+    background: #1c4f80;
+}
+
+.range-toggle-min {
+    left: 0;
+}
+
+.range-toggle-max {
+    left: 80%;
+}
+
 .btn {
     font: inherit;
     border: none;
@@ -379,7 +468,7 @@ img {
     border-bottom-width: 0;
 }
 
-/*  
+/* для верх стрелки актив сост */
 .sort-top-current {
     align-self: center;
     border: 5px solid #81b3d2;
@@ -388,7 +477,7 @@ img {
     border-right-color: transparent;
     border-left-color: transparent;
 }
-*/
+
 
 .sort-bottom-current {
     align-self: center;
@@ -556,7 +645,9 @@ img {
 .card-rating {
     box-sizing: border-box;
     width: 125px;
-    padding: 5px 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
     color: #666666;
     background-color: #f2f2f2;
 }
