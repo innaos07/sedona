@@ -282,6 +282,10 @@ img {
     border: none;
 }
 
+.price-controls input:focus {
+    outline: none;
+}
+
 .range-controls {
     position: relative;
     margin-bottom: 32px;

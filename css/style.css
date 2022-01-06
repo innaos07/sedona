@@ -342,6 +342,7 @@ a {
 }
 
 .search {
+    position: relative;
     background-color: #ffffff;
 }
 
@@ -397,20 +398,22 @@ a {
 
 .map {
     background-color: #ffffff;
+    max-height: 593px;
  }
 
 .map img {
     width: 1200px;
-    height: 593;
+    height: 593px;
 }
 
 .modal-form-search {
-
-    background-color: #000000;
+    position: absolute;
+    top: 293px;
+    left: 316px;
 }
 
 .form-search { 
-    width: 570px;
+    width: 567px;
     margin: 0 auto;
     padding-top: 55px;
     padding-bottom: 55px;
