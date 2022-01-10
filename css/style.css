@@ -18,6 +18,8 @@ a {
 .container {
   width: 1200px;
   margin: 0 auto;
+  box-shadow: 4px 0 8px -9px rgba(0, 0, 0, 0.5),
+             -4px 0 8px -9px rgba(0, 0, 0, 0.5);
 }
 
 .visually-hidden{
@@ -45,7 +47,7 @@ a {
 .page-header-wrapper {
     display: flex;
     justify-content: space-between;
-    display: relative;
+    position: relative;
     background-color: #ffffff;
 }
 
@@ -54,6 +56,7 @@ a {
     width: 138px;
     order: 2;
 }
+
 .header-logo .header-logo-img {
     position: absolute;
     width: 138px;
@@ -80,6 +83,7 @@ a {
     list-style: none;
     flex-wrap: wrap;
 }
+
 .main-nav-right-link, 
 .main-nav-left-link {
     display: block;
@@ -619,6 +623,7 @@ a {
 .social-btn:active {
     background-color: #5496bd;
 }
+
 .social-btn:active path {
     fill: #88b6d1;
 }
