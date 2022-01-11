@@ -46,7 +46,9 @@
         <main>
 
             <div class="container">
+
                 <section class="promo">
+
                     <h2 class="visually-hidden"></h2>
                     <div class="promo-content">
                         <img class="img-welcome" src="img/welcome.png" width="188" height="45" alt="welcome">
@@ -60,8 +62,11 @@
                         <p class="promo-reason">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
                         </p>
                     </div>
+                
                 </section>  
+
                 <section class="feature">
+
                     <h2 class="visually-hidden"></h2>
                     <ul class="feature-list ">
                         <li class="feature-item">
@@ -121,14 +126,18 @@
                             </p>
                         </li>
                     </ul>
+                
                 </section>
+
                 <section class="search">
+
                     <div class="search-wrapper">
                         <h2 class="visually-hidden">Поиск гостиницы</h2>
                         <p class="search-title">ЗАИНТЕРЕСОВАЛИСЬ?</p>
                         <p class="search-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
                         <button class="btn btn-search" type="button">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>  
-                    </div>   
+                    </div> 
+
                     <section class="modal-form-search">
                         <h2 class="visually-hidden"> Форма поиска номера</h2>
                         <form class="form-search" action="https://echo.htmlacademy.ru" metod="post">
@@ -166,11 +175,18 @@
                             </div>
                             <button class="btn btn-form-search" type="submit">НАЙТИ</button>
                         </form>
+
                     </section>
+
                 </section>
+
                 <section class="map">
+                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d34394.91848354856!2d-111.80984205317918!3d34.85867423153962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1641914311172!5m2!1sru!2sru" width="1200" height="593" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    -->
                     <img class="map-img" src="img/map.jpg" width="1200" height="593" alt="карта">
+
                 </section>
+
             </div>
 
         </main>
@@ -199,7 +215,7 @@
                              <li class="social-item">
                                 <a class="social-btn" href="#">
                                     <span class="visually-hidden">Youtube</span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="16" viewBox="0 0 20 16"><image overflow="visible" width="20" height="16" xlink:href="youtube.png"/><path fill="#FFF" d="M17 0H3C1.35 0 0 1.35 0 3v10c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zM6.027 11.998V4.002L15.014 8l-8.987 3.998z"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="16" viewBox="0 0 20 16"><path fill="#FFF" d="M17 0H3C1.35 0 0 1.35 0 3v10c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zM6.027 11.998V4.002L15.014 8l-8.987 3.998z"/></svg>
                                 </a>
                             </li>
                         </ul>
@@ -212,38 +228,46 @@
                         </a>
                     </div>
                 </div>
-            </div>
+           </div>
 
         </footer>
+       <script>
+           let btnSearch = document.querySelector('.btn-search');
+           let popupSearch = document.querySelector('.modal-form-search');
+           let dataArrivel = popupSearch.querySelector('[name=arrival-date]');
+           let dataDeparture = popupSearch.querySelector('[name=departure-date');
+           let formSearch = document.querySelector('.form-search');
 
 
+           btnSearch.addEventListener('click', function (evt) {
+               evt.preventDefault();
+               console.log('click') 
+               popupSearch.classList.toggle('modal-form-search-show');
+               popupSearch.classList.remove('modal-error');
+               dataArrivel.focus();
+           });
 
+           formSearch.addEventListener('submit', function (evt) {
+            if (!dataArrivel.value || !dataDeparture.value) {
+                evt.preventDefault();
+                console.log('text');
+                popupSearch.classList.add('modal-error');
+               }
+            
+           });
 
+              window.addEventListener("keydown", function (evt) {
+            if (evt.keyCode === 27) {
+                evt.preventDefault(); 
 
+                if (popupSearch.classList.contains('modal-form-search-show')){
+                    popupSearch.classList.remove('modal-form-search-show');
+                    popupSearch.classList.remove('modal-error');
 
+                }
+            }
+           });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+       </script>
     </body>
 </html>

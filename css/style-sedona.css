@@ -37,6 +37,16 @@ img {
     overflow: hidden;
 }
 
+.btn {
+    font: inherit;
+    border: none;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #000000;
+}
+
 .page-header {
     height: 55px;
 }
@@ -86,6 +96,7 @@ img {
     display: block;
     padding-top: 15px;
     padding-bottom: 15px;
+
     font-weight: 700;
     color: #000000;
     line-height: 26px; 
@@ -161,22 +172,19 @@ img {
 .filter legend,
 .filter-cost label,
 .filter-option label,
-.filter-range label{
+.filter-range label {
     font-size: 16px;
     color: #ffffff;
 }
 
 .filter-option {
     position: relative;
+    padding-left: 40px;
     padding-bottom: 30px;
 }
 
 .filter-option:last-child {
     padding-bottom: 0;
-}
-
-.filter-option  {
-    padding-left: 40px;
 }
 
 .filter-option input[type="checkbox"]~label {
@@ -334,16 +342,6 @@ img {
     left: 80%;
 }
 
-.btn {
-    font: inherit;
-    border: none;
-    text-align: center;
-    vertical-align: middle;
-    text-transform: uppercase;
-    color: #ffffff;
-    background-color: #000000;
-}
-
 .btn-filter {
     align-self: center;
     width: 133px;
@@ -445,7 +443,6 @@ img {
     border-bottom-width: 0;
 }
 
-
 .sort-top:hover { 
     align-self: center;
     border: 5px solid #000000;
@@ -520,8 +517,8 @@ img {
 }
 
 .catalog-item-wrapper {
-     display: flex;
-     padding-top: 30px;
+    display: flex;
+    padding-top: 30px;
     padding-bottom: 30px;
     padding-left: 70px;
     padding-right: 70px;
@@ -538,7 +535,6 @@ img {
     flex-direction: column;
     align-items: flex-start;
     width: 730px;
-
 }
 
 .cards-title {
