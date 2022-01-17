@@ -673,9 +673,16 @@ img {
 }
 
 .footer-logo {
+    width: 150px;
+    vertical-align: middle;
+    line-height: 16px;
+    text-align: center;
+    align-self: center;
+}
+
+.footer-logo img{
     width: 136px;
     height: 16px;
-    align-self: center;
 }
 
 .social-list {
